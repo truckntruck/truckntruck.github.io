@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TRUCK N TRUCK | Transport ka poora hisaab</title>
+  <meta name="description" content="Building material transport ke liye trip, ledger, payment, driver, truck aur cloud sync ka digital hisaab." />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121923; --muted:#9ba8b8; --text:#f7f9fc;
+      --accent:#ff8b3d; --accent2:#ffd3b8; --line:#253041; --green:#1db954;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,15,20,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:18px}
+    .brand{font-weight:900;letter-spacing:.6px}
+    .brand span{color:var(--accent)}
+    .links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:#dbe3ee}
+    .hero{padding:80px 0 46px}
+    .eyebrow{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:1.5px}
+    h1{font-size:clamp(42px,8vw,82px);line-height:.98;margin:12px 0 20px;max-width:900px}
+    h2{font-size:clamp(30px,5vw,52px);line-height:1.1;margin:8px 0 14px}
+    .lead{max-width:760px;color:#c5cfdb;font-size:18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{padding:13px 18px;border-radius:12px;font-weight:800;border:1px solid var(--line);display:inline-block}
+    .btn.primary{background:var(--accent);color:#1a0f08;border-color:transparent}
+    .btn.wa{background:var(--green);color:white;border-color:transparent}
+    .stats{margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .stat{background:linear-gradient(180deg,#141c27,#101720);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center;font-weight:800}
+    section{padding:64px 0}
+    .section-kicker{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:1.4px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .num{color:var(--accent);font-weight:900;font-size:13px}
+    .card h3{margin:8px 0 8px;font-size:21px}
+    .card p{margin:0;color:var(--muted)}
+    .workflow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+    .step{border-left:3px solid var(--accent);padding:4px 0 4px 16px}
+    .step b{font-size:20px}
+    .step p{color:var(--muted);margin:6px 0 0}
+    .contact{background:linear-gradient(135deg,#151d28,#0f151d);border:1px solid var(--line);border-radius:24px;padding:30px}
+    footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
+    .footer-links{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0}
+    details{background:#101720;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:12px}
+    summary{cursor:pointer;font-weight:800}
+    @media(max-width:800px){
+      .links{display:none}
+      .stats,.grid,.workflow{grid-template-columns:1fr}
+      .hero{padding-top:56px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top">TRUCK <span>N</span> TRUCK</a>
+      <div class="links">
+        <a href="#features">Features</a>
+        <a href="#workflow">कैसे काम करता है</a>
+        <a href="#contact">Demo / Contact</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">BUILDING MATERIAL TRANSPORT KE LIYE</div>
+      <h1>हर trip का हिसाब,<br>एक ही जगह।</h1>
+      <p class="lead">फोटो से trip शुरू करें, details जाँचें, और party, crusher, driver व truck का हिसाब साथ रखें। Register और calculator के बीच भटकना कम करें।</p>
+      <div class="cta">
+        <a class="btn wa" href="https://wa.me/918936993699" target="_blank" rel="noopener">WhatsApp पर demo माँगें ↗</a>
+        <a class="btn" href="#features">App के features देखें ↓</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">PHOTO + OCR ENTRY</div>
+        <div class="stat">24×7 LEDGERS</div>
+        <div class="stat">CLOUD SYNC</div>
+        <div class="stat">PDF SHARING</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-kicker">ROZ KA KAAM, EK APP MEIN</div>
+      <h2>जिस हिसाब के लिए कई register लगते थे</h2>
+      <p class="lead">TRUCK N TRUCK में trip से जुड़े records और ledgers एक साथ देखे जा सकते हैं।</p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="num">01</div>
+          <h3>Trip entry, दो तरीके</h3>
+          <p>Slip की photo लेकर OCR की मदद से details भरें, या जरूरत के अनुसार manual entry करें। Admin final approval से पहले details जाँच सकता है।</p>
+        </div>
+        <div class="card">
+          <div class="num">02</div>
+          <h3>हर खाते का ledger</h3>
+          <p>Party, crusher/vendor, driver, day book और truck ledger में चुने हुए समय का हिसाब देखें। Diesel व अन्य trip खर्च भी record करें।</p>
+        </div>
+        <div class="card">
+          <div class="num">03</div>
+          <h3>Payment और receipts</h3>
+          <p>Cash, credit और payment entries दर्ज करें। भेजने योग्य ledger PDF और उससे जुड़े चुने हुए documents तैयार करें।</p>
+        </div>
+        <div class="card">
+          <div class="num">04</div>
+          <h3>Dashboard पर स्थिति</h3>
+          <p>Trips, cash in hand और कारोबार से जुड़ी मुख्य जानकारी जल्दी देखें। Admin और driver के लिए अलग काम की screens हैं।</p>
+        </div>
+        <div class="card">
+          <div class="num">05</div>
+          <h3>Cloud sync और backup</h3>
+          <p>Internet उपलब्ध होने पर जुड़े accounts का data sync करें। App में backup और data management के options भी हैं।</p>
+        </div>
+        <div class="card">
+          <div class="num">06</div>
+          <h3>Truck का हिसाब</h3>
+          <p>Particular truck की earning और expenses को चुने हुए समय के लिए देखें और PDF share करें।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <div class="wrap">
+      <div class="section-kicker">EK SEEDHA WORKFLOW</div>
+      <h2>Photo se approval.<br>Approval se hisaab.</h2>
+      <p class="lead">Driver trip की photos भेज सकता है। Admin details देखता है, जरूरत हो तो सुधारता है और final approval करता है। उसके बाद उसी trip से जुड़े हिसाब ledgers में दिखाई देते हैं।</p>
+
+      <div class="workflow">
+        <div class="step">
+          <span class="num">01</span><br>
+          <b>Trip की photos लें</b>
+          <p>Crusher slip, royalty और जरूरत होने पर party kanta slip।</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span><br>
+          <b>Details जाँचें</b>
+          <p>OCR से पढ़ी जानकारी को admin जाँचकर पूरा कर सकता है।</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span><br>
+          <b>Ledger देखें और भेजें</b>
+          <p>Party, crusher, driver और truck के हिसाब की PDF बनाएँ।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div class="section-kicker">DEMO AUR ACCESS</div>
+        <h2>अपना transport का हिसाब digital करें।</h2>
+        <p class="lead">TRUCK N TRUCK के demo, trial और जानकारी के लिए सीधे संपर्क करें।</p>
+        <p><strong>CONTACT</strong><br>Kuldeep Chaudhary<br>+91 89369 93699</p>
+        <div class="cta">
+          <a class="btn wa" href="https://wa.me/918936993699" target="_blank" rel="noopener">WhatsApp पर बात करें ↗</a>
+          <a class="btn" href="mailto:sunitaniet2012@gmail.com">Email support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="wrap">
+      <div class="section-kicker">PRIVACY & DATA</div>
+      <h2>Privacy Policy</h2>
+
+      <details open>
+        <summary>Privacy Policy</summary>
+        <p>TRUCK N TRUCK transport business records जैसे trip details, vehicle/driver information, ledger entries, payment records और uploaded images को app functionality देने के लिए process कर सकता है। Data को केवल आवश्यक business/app functions, account access, sync, backup और support के लिए उपयोग किया जाना चाहिए।</p>
+        <p>Support के लिए: <a href="mailto:sunitaniet2012@gmail.com">sunitaniet2012@gmail.com</a></p>
+      </details>
+
+      <details id="deletion">
+        <summary>Account & Data Deletion</summary>
+        <p>Account या संबंधित app data delete कराने के लिए registered account details के साथ support email पर request भेजें। Request verify होने के बाद applicable account/data deletion process follow किया जाएगा।</p>
+        <p>Email: <a href="mailto:sunitaniet2012@gmail.com">sunitaniet2012@gmail.com</a></p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>TRUCK N TRUCK</strong><br>
+    Building material transport का digital हिसाब।
+    <div class="footer-links">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#deletion">Account & data deletion</a>
+      <a href="mailto:sunitaniet2012@gmail.com">Email support</a>
+    </div>
+    © 2026 TRUCK N TRUCK. Kuldeep Chaudhary.
+  </div>
+</footer>
+</body>
+</html>
